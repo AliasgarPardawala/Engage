@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/im_dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_profile_1"
+        android:layout_margin="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/tv_hobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/im_dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginVertical="8dp"
+        tools:text="Hobby"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hobby"
+        android:layout_toEndOf="@id/im_dp"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="Thank you so much for getting in contact wit us. We will consider this in our next update."
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="21 Jul"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

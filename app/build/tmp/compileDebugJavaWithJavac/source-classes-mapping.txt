@@ -1,0 +1,10 @@
+com/pardawala/aliasgar/engage/BuildConfig.java
+ com.pardawala.aliasgar.engage.BuildConfig
+com/pardawala/aliasgar/engage/databinding/FragmentHomeBinding.java
+ com.pardawala.aliasgar.engage.databinding.FragmentHomeBinding
+com/pardawala/aliasgar/engage/databinding/ActivityMainBinding.java
+ com.pardawala.aliasgar.engage.databinding.ActivityMainBinding
+com/pardawala/aliasgar/engage/databinding/FragmentMessagesBinding.java
+ com.pardawala.aliasgar.engage.databinding.FragmentMessagesBinding
+com/pardawala/aliasgar/engage/databinding/ItemChatBinding.java
+ com.pardawala.aliasgar.engage.databinding.ItemChatBinding

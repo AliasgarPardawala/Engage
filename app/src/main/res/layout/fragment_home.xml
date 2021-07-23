@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.HomeFragment">
+
+    <ImageView
+        android:id="@+id/im_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_back"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="fab_next,fab_star,fab_filter,fab_top,fab_like" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="fab_time,tv_bio,tv_cross_path,tv_place,tv_time,fab_reset,im_name,imageView" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_arrow_forward"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_home"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_star"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/yellow"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_round_star_24"
+        app:layout_constraintBottom_toTopOf="@+id/fab_next"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_like"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintBottom_toTopOf="@+id/fab_star"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_top"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/blue"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_round_star_24"
+        app:layout_constraintBottom_toTopOf="@+id/fab_filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_filter"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/blue"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fab_top" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_time"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/blue"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_calendar_today_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="75dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp"
+        android:src="@drawable/symbol_s"
+        app:layout_constraintEnd_toEndOf="@+id/fab_time"
+        app:layout_constraintTop_toBottomOf="@+id/fab_time" />
+
+    <TextView
+        android:id="@+id/tv_cross_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You crossed path near"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/fab_time" />
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place"
+        android:textSize="9dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_cross_path"
+        app:layout_constraintTop_toBottomOf="@id/tv_cross_path" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 min ago"
+        android:textSize="8dp"
+        app:layout_constraintStart_toStartOf="@id/tv_place"
+        app:layout_constraintTop_toBottomOf="@id/tv_place" />
+
+    <TextView
+        android:id="@+id/tv_bio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/test"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vert" />
+
+    <ImageView
+        android:id="@+id/im_name"
+        android:layout_width="100dp"
+        android:layout_height="22dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/fab_background"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bio"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginHorizontal="12dp"
+        android:text="Tapan,"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/im_name"
+        app:layout_constraintStart_toStartOf="@id/im_name" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/rounded_corner"
+        android:text=" 26 "
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@id/im_name"
+        app:layout_constraintEnd_toEndOf="@id/im_name" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_undo"
+        app:layout_constraintBottom_toTopOf="@id/im_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

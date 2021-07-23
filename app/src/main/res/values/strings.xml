@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Engage</string>
+    <string name="test">This is my bio. Here I\'ll put up my status. It should be short - 2 lines. If it is more than 2 lines then it will show ...more button.</string>
+</resources>
